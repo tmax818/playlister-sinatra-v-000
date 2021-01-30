@@ -6,13 +6,6 @@ class Artist < ActiveRecord::Base
       name.downcase.gsub(" ", "-")
     end
 
-    def self.find_by_slug(slug) #use find
-      self.all.find do |song|
-        if song.slug == slug
-          @song = song
-          end
-        end
-        @song
-      end
+log10
 
 end
